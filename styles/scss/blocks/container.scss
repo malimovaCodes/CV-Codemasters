@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 100px;
+
+    &__personal-info {
+        .photo { 
+            position: relative; 
+            width: 450px; 
+        
+            &__image {
+                display: block; 
+                border-radius: 50px;
+            }
+        
+            &::before {
+                content: '';
+                position: absolute;
+                inset: -5px; 
+                border: 2px var(--accent-color) solid;
+                border-radius: 55px; 
+                rotate: -8deg;
+                transition: rotate 0.3s ease-in-out; 
+            }
+        }
+    }
+}

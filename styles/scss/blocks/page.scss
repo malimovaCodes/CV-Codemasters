@@ -1,0 +1,23 @@
+.page {
+    font-size: 140%;
+    font-family: 'Wellingtons-Regular', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media (prefers-color-scheme: light) {
+    .page {
+        background-image: url(../../assets/imgs/light-background.svg);
+        color: var(--main-grey-color);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .page {
+      background-image: url(../../assets/imgs/dark-background.png);
+      color: var(--main-white-color);
+      
+    }
+}

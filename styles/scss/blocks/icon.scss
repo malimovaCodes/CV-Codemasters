@@ -1,0 +1,10 @@
+.icon {
+    padding: 0 20px;
+    width: 35px; 
+}
+
+@media (prefers-color-scheme: dark) {
+    .icon {
+      filter: invert(1);
+    }
+}
