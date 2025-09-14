@@ -1,0 +1,131 @@
+@import '../css/variables/variables.css';
+.contacts {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts__item {
+  display: flex;
+}
+.contacts__field {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.contacts__field a, .contacts__field a:visited {
+  color: inherit;
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+}
+.contacts__field a:hover {
+  color: var(--accent-color);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: center;
+  column-gap: 50px;
+  row-gap: 100px;
+}
+.container__personal-info .photo {
+  position: relative;
+  width: 450px;
+}
+.container__personal-info .photo__image {
+  display: block;
+  border-radius: 50px;
+}
+.container__personal-info .photo::before {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border: 2px var(--accent-color) solid;
+  border-radius: 55px;
+  rotate: -8deg;
+  transition: rotate 0.3s ease-in-out;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description__text {
+  width: 450px;
+  text-align: center;
+}
+
+.icon {
+  padding: 0 20px;
+  width: 35px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .icon {
+    filter: invert(1);
+  }
+}
+.line {
+  width: 100px;
+  height: 2px;
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.name {
+  font-family: "Wellingtons-Bold", sans-serif;
+  font-size: 50px;
+  width: 300px;
+}
+
+.page {
+  font-size: 140%;
+  font-family: "Wellingtons-Regular", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media (prefers-color-scheme: light) {
+  .page {
+    background-image: url(../../assets/imgs/light-background.svg);
+    color: var(--main-grey-color);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .page {
+    background-image: url(../../assets/imgs/dark-background.png);
+    color: var(--main-white-color);
+  }
+}
+.title {
+  background-color: var(--accent-color);
+  border-radius: 30px;
+  color: white;
+  padding: 10px 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-family: "Wellingtons-Bold", sans-serif;
+}
+
+@font-face {
+  font-family: "Wellingtons-Regular";
+  src: url("../../assets/fonts/Wellingtons-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Wellingtons-Bold";
+  src: url("../../assets/fonts/Wellingtons-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lovelies";
+  src: url("../../assets/fonts/Lovelies.otf") format("opentype");
+}
+
+/*# sourceMappingURL=main.css.map */
