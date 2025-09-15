@@ -82,6 +82,11 @@
   text-align: center;
 }
 
+@media (max-width: 960px) {
+  .description__text {
+    width: 350px;
+  }
+}
 .icon {
   padding: 0 20px;
   width: 35px;
