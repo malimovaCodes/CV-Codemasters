@@ -12,10 +12,10 @@
         height: 70px;
         display: flex;
         align-items: center;
+        text-align: center;
 
         a, a:visited {
             color: inherit; 
-            text-decoration: underline;
             transition: color 0.3s ease-in-out; 
         }
 

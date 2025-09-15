@@ -3,6 +3,7 @@
     grid-template-columns: 600px 600px;
     grid-template-rows: auto;
     align-items: center;
+    align-content: center;
     justify-content: center;
     column-gap: 50px;
     row-gap: 100px;
@@ -13,8 +14,8 @@
             width: 450px; 
         
             &__image {
-                display: block; 
                 border-radius: 50px;
+                width: 100%;
             }
         
             &::before {
@@ -29,3 +30,33 @@
         }
     }
 }
+
+@media (max-width: 1300px) {
+    .container {
+        grid-template-columns: 430px 430px;
+        column-gap: 40px;
+    }
+  }
+
+@media (max-width: 960px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;  
+
+        &__personal-info {
+            .photo { 
+                width: 300px; 
+            
+                &__image {
+                    border-radius: 40px;
+                }
+            
+                &::before {
+                    border-radius: 45px; 
+                }
+            }
+        }
+    }
+  }
+  
